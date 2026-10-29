@@ -1,3 +1,5 @@
+![AI-Generated](https://shields.io)
+
 # Spicetify Track Downloader
 
 A Spicetify extension (JavaScript) paired with a local Python background bridge to download tracks directly from Spotify Desktop via `spotdl`.
