@@ -39,7 +39,7 @@ This project was built under human architectural direction using Google DeepMind
 - **Native Settings UI**: Integrated into Spotify's Preferences (`/preferences`) and Profile Menu.
 - **5-Tier Fallback Metadata Cascade**: Guarantees downloads never fail even for unplayed tracks or when Spotify Web APIs are rate-limited.
 - **Asynchronous**: Responds immediately with `202 Accepted` to prevent client timeouts while the background worker handles audio encoding.
-- **Configurable Security**: Restrict writes to standard folders or enable downloads to any folder on your machine.
+- **Configurable Security**: Restrict writes to standard folders or enable downloads to any folder on your machine (`ALLOW_ANY_PATH`).
 
 ### Prerequisites
 
@@ -73,7 +73,7 @@ Copy `trackDownloader.js` into your Spicetify `Extensions` folder:
 - **Windows**: `%userprofile%\.spicetify\Extensions\`
 - **Linux/macOS**: `~/.config/spicetify/Extensions/`
 
-*(Tip: You can open this directory instantly by running `spicetify path -e`)*
+*(Tip: Run `spicetify config-dir` to open your Spicetify folder in Explorer, then open the `Extensions` directory)*
 
 Enable and apply the extension:
 
@@ -152,7 +152,7 @@ python spicetify_server.py
 - **Windows**: `%userprofile%\.spicetify\Extensions\`
 - **Linux/macOS**: `~/.config/spicetify/Extensions/`
 
-*(Папку можно быстро открыть командой в терминале: `spicetify path -e`)*
+*(Подсказка: Выполните `spicetify config-dir` в терминале, чтобы открыть главную папку Spicetify, и перейдите в `Extensions`)*
 
 Активируйте расширение:
 
