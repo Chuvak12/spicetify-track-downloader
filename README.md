@@ -10,6 +10,12 @@ This project solves the limitation cleanly by decoupling the UI from the downloa
 - **Frontend (`trackDownloader.js`)**: Adds download actions to the Spotify context menu, injects an in-app settings UI, resolves metadata via a resilient 5-tier fallback cascade (Spotify Internal GraphQL Pathfinder, Cosmos Web API, Player/Queue state, and DOM scraping), and coordinates download payloads.
 - **Backend (`spicetify_server.py`)**: A lightweight, asynchronous Python HTTP daemon that validates requests, opens native OS folder selection dialogs, and queues downloads through `spotdl` without freezing Spotify's UI.
 
+## Development & AI Attribution
+
+This project was built under human architectural direction using a multi-model development pipeline:
+- **Frontend Extension (`trackDownloader.js`)**: Implemented by **Gemini 4 Argon** (adhering to strict SemVer, Symbol Immutability, and decoupled SOLID modules).
+- **Backend Bridge (`spicetify_server.py`)**: Implemented by **Gemini 3.8 Flash** (featuring asynchronous task queuing, native OS file picker integration, and security controls).
+
 ## Features
 
 - **1-Click Download**: Standard click queues the track into your default download folder.
