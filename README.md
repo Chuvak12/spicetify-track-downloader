@@ -1,6 +1,8 @@
-![AI-Generated](https://shields.io)
-
 # Spicetify Track Downloader
+
+[![Frontend: Gemini 4 Argon](https://img.shields.io/badge/Frontend-Gemini%204%20Argon-8E75C2?style=flat-square&logo=googlegemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
+[![Backend: Gemini 3.8 Flash](https://img.shields.io/badge/Backend-Gemini%203.8%20Flash-4285F4?style=flat-square&logo=googlegemini&logoColor=white)](https://deepmind.google/technologies/gemini/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=flat-square)](LICENSE)
 
 A Spicetify extension (JavaScript) paired with a local Python background bridge to download tracks directly from Spotify Desktop via `spotdl`.
 
@@ -14,7 +16,7 @@ This project solves the limitation cleanly by decoupling the UI from the downloa
 
 ## Development & AI Attribution
 
-This project was built under human architectural direction using a multi-model development pipeline:
+This project was built under human architectural direction using Google DeepMind's Gemini models:
 - **Frontend Extension (`trackDownloader.js`)**: Implemented by **Gemini 4 Argon** (adhering to strict SemVer, Symbol Immutability, and decoupled SOLID modules).
 - **Backend Bridge (`spicetify_server.py`)**: Implemented by **Gemini 3.8 Flash** (featuring asynchronous task queuing, native OS file picker integration, and security controls).
 
